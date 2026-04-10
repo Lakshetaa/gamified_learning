@@ -1,0 +1,16 @@
+{
+  "name": "gamified-learning-platform",
+  "version": "1.0.0",
+  "description": "MERN Gamified Learning Platform for Rural Children - Grade 3 Science",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "seed": "cd backend && node seed.js",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
